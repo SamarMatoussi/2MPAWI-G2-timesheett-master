@@ -15,7 +15,7 @@
     stages {
     stage('CHECKOUT GIT') {
     steps {
-    git 'https://github.com/aaheddri/2MPAWI-G2-timesheett.git'
+         checkout([$class: 'GitSCM', branches: [[name: '**/SamarMatoussi']], userRemoteConfigs: [[url: 'your_git_repository_url']]])
     }
     }
     
